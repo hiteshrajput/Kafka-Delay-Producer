@@ -1,0 +1,4 @@
+export default {
+  INVALID_DELAY_MESSAGE_FORMAT: "INVALID DELAY MESSAGE FORMAT",
+  OK: "OK",
+};

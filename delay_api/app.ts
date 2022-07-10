@@ -1,12 +1,18 @@
 /**
  * Delay API Microservice
  */
-import express, { Express } from "express";
+import express, { Express, NextFunction } from "express";
 import loadConfigs from "load_configs";
+import * as bodyparser from "body-parser";
+import { delayRoutes } from "delay_api/routes/delay-message";
+import { NextHandleFunction } from "connect";
 
-const PORT = loadConfigs().DELAY_API_SERVER_PORT 
-const app: Express = express()
+const PORT = loadConfigs().DELAY_API_SERVER_PORT;
+const app: Express = express();
+const jsonParser: NextHandleFunction = bodyparser.json();
 
-app.listen(PORT,()=>{
-    console.log(`DELAY_API_SERVICE at PORT ${PORT}`)
-})
+delayRoutes(app, jsonParser);
+
+app.listen(PORT, () => {
+  console.log(`DELAY_API_SERVICE at PORT ${PORT}`);
+});
