@@ -17,7 +17,9 @@ export default function loadConfigs(): ENV {
   if (config !== undefined) {
     return {
       DELAY_API_SERVER_HOST: config.DELAY_API_SERVER_HOST,
-      DELAY_API_SERVER_PORT: parseInt(config.DELAY_API_SERVER_PORT)
+      DELAY_API_SERVER_PORT: parseInt(config.DELAY_API_SERVER_PORT),
+      KAFKA_PRODUCER_HOST: config.KAFKA_PRODUCER_HOST,
+      KAFKA_PRODUCER_PORT: parseInt(config.KAFKA_PRODUCER_PORT)
     };
   } else throw new Error(ResponseMessage.ERROR_LOADING_ENV_FILE);
 }
