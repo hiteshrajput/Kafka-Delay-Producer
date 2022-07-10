@@ -1,4 +1,4 @@
-import DelayMessageModel from "delay_api/db/connection/mongo/model/delay-message";
+import DelayMessageModel from "delay_api/db/mongo/model/delay-message";
 import { DelayMessage } from "types/delay-message";
 
 export default async function saveDelayMessage(message: DelayMessage) {

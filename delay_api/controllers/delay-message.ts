@@ -1,6 +1,6 @@
 import responseCode from "constants/response-code";
 import responseMessage from "constants/response-message";
-import saveDelayMessage from "delay_api/db/connection/mongo/query/save-delay-message";
+import saveDelayMessage from "delay_api/db/mongo/query/save-delay-message";
 import { Request, Response } from "express";
 import { DelayMessage } from "types/delay-message";
 
