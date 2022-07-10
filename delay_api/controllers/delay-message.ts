@@ -1,4 +1,4 @@
-import responsCode from "constants/respons-code";
+import responsCode from "constants/response-code";
 import responseMessage from "constants/response-message";
 import { Request, Response } from "express";
 import { DelayMessage } from "types/delay-message";

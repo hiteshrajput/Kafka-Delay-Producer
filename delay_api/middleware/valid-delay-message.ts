@@ -1,5 +1,5 @@
 import dtypes from "constants/dtypes";
-import responsCode from "constants/respons-code";
+import responsCode from "constants/response-code";
 import responseMessage from "constants/response-message";
 import { Request, Response, NextFunction } from "express";
 import { DelayMessage } from "types/delay-message";
