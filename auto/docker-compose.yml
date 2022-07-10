@@ -1,0 +1,18 @@
+version: "3"
+services:
+  mongodb:
+    image: mongo
+    ports:
+      - "27017:27017"
+    network_mode: bridge
+    container_name: kafka_delay_producer
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ""
+      MONGO_INITDB_ROOT_PASSWORD: ""
+  redis_cache:
+    image: redis:6.2-alpine
+    restart: always
+    ports: 
+      - "6379:6379"
+    command: redis-server --save 20 1 --loglevel warning
+    
