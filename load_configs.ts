@@ -19,7 +19,9 @@ export default function loadConfigs(): ENV {
       DELAY_API_SERVER_HOST: config.DELAY_API_SERVER_HOST,
       DELAY_API_SERVER_PORT: parseInt(config.DELAY_API_SERVER_PORT),
       KAFKA_PRODUCER_HOST: config.KAFKA_PRODUCER_HOST,
-      KAFKA_PRODUCER_PORT: parseInt(config.KAFKA_PRODUCER_PORT)
+      KAFKA_PRODUCER_PORT: parseInt(config.KAFKA_PRODUCER_PORT),
+      REDIS_SUBSCRIBER_HOST: config.REDIS_SUBSCRIBER_HOST,
+      REDIS_SUBSCRIBER_PORT: parseInt(config.REDIS_SUBSCRIBER_PORT)
     };
   } else throw new Error(ResponseMessage.ERROR_LOADING_ENV_FILE);
 }
