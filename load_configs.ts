@@ -1,7 +1,7 @@
 import * as dotenv from "dotenv";
 import path from "path";
 import ENV from "types/env";
-import ResponseMessage from "execptions/response_message";
+import ResponseMessage from "constants/response-message";
 
 /**
  * This function loads the .env file from root dir

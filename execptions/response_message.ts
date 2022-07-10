@@ -1,3 +1,0 @@
-export = {
-    ERROR_LOADING_ENV_FILE: "ERROR LOADING ENV FILE"
-}
