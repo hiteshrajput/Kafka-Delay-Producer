@@ -21,7 +21,9 @@ export default function loadConfigs(): ENV {
       KAFKA_PRODUCER_HOST: config.KAFKA_PRODUCER_HOST,
       KAFKA_PRODUCER_PORT: parseInt(config.KAFKA_PRODUCER_PORT),
       REDIS_SUBSCRIBER_HOST: config.REDIS_SUBSCRIBER_HOST,
-      REDIS_SUBSCRIBER_PORT: parseInt(config.REDIS_SUBSCRIBER_PORT)
+      REDIS_SUBSCRIBER_PORT: parseInt(config.REDIS_SUBSCRIBER_PORT),
+      MONGODB_URL: config.MONGODB_URL,
+      MONGODB_DATABASE: config.MONGODB_DATABASE,
     };
   } else throw new Error(ResponseMessage.ERROR_LOADING_ENV_FILE);
 }
