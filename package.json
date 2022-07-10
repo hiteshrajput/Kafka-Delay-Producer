@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "serve:dev:delay_api": "nodemon --watch './**/*.ts' --ignore './**/*.spec.ts' --exec  ts-node -r tsconfig-paths/register delay_api/app.ts"
+    "serve:dev:delay_api": "nodemon --watch './**/*.ts' --ignore './**/*.spec.ts' --exec  ts-node -r tsconfig-paths/register delay_api/app.ts",
+    "serve:dev:kafka_producer": "nodemon --watch './**/*.ts' --ignore './**/*.spec.ts' --exec  ts-node -r tsconfig-paths/register kafka_producer/app.ts"
   },
   "repository": {
     "type": "git",
