@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"todohighlight.isEnable": true,
+		"tslint.jsEnable": true,
+		"editor.formatOnSave": true,
+		"editor.formatOnPaste": true,
+		"typescript.inlayHints.enumMemberValues.enabled": true,
+		"[typescript]": {
+			"editor.defaultFormatter": "esbenp.prettier-vscode"
+		}
+	}
+}
