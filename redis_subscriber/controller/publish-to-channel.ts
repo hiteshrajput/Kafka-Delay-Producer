@@ -1,8 +1,7 @@
 import { RedisCommandArgument } from "@redis/client/dist/lib/commands";
 import responseCode from "constants/response-code";
 import responseMessage from "constants/response-message";
-import { Request, Response, NextFunction } from "express";
-import redisClient from "redis_subscriber/redis/conn";
+import { Request, Response } from "express";
 import setMessage from "redis_subscriber/redis/query/set-message";
 import { PublishMessage } from "types/publish-message";
 

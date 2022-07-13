@@ -1,4 +1,4 @@
-import redisClient from "redis_subscriber/redis/conn";
+import { redisClient } from "redis_subscriber/redis/conn";
 import { PublishMessage } from "types/publish-message";
 
 export default async function setMessage(message: PublishMessage) {
