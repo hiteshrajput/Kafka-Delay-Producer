@@ -9,6 +9,7 @@ interface ENV {
   MONGODB_DATABASE: string;
   REDIS_PUBLISH_CHANNEL: string;
   REDIS_PUBLISH_MESSAGE_ROUTE: string;
+  KAFKA_PRODUCER_MESSAGE_ROUTE: string;
 }
 
 export default ENV;

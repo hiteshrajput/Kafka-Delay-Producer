@@ -26,6 +26,7 @@ export default function loadConfigs(): ENV {
       MONGODB_DATABASE: config.MONGODB_DATABASE,
       REDIS_PUBLISH_CHANNEL: config.REDIS_PUBLISH_CHANNEL,
       REDIS_PUBLISH_MESSAGE_ROUTE: config.REDIS_PUBLISH_MESSAGE_ROUTE,
+      KAFKA_PRODUCER_MESSAGE_ROUTE: config.KAFKA_PRODUCER_MESSAGE_ROUTE,
     };
   } else throw new Error(ResponseMessage.ERROR_LOADING_ENV_FILE);
 }
