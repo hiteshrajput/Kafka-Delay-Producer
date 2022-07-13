@@ -27,6 +27,8 @@ export default function loadConfigs(): ENV {
       REDIS_PUBLISH_CHANNEL: config.REDIS_PUBLISH_CHANNEL,
       REDIS_PUBLISH_MESSAGE_ROUTE: config.REDIS_PUBLISH_MESSAGE_ROUTE,
       KAFKA_PRODUCER_MESSAGE_ROUTE: config.KAFKA_PRODUCER_MESSAGE_ROUTE,
+      KAFKA_BROKERS: config.KAFKA_BROKERS.split(","),
+      KAFKA_CLIENT_ID: config.KAFKA_CLIENT_ID,
     };
   } else throw new Error(ResponseMessage.ERROR_LOADING_ENV_FILE);
 }
