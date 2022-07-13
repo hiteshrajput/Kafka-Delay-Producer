@@ -9,3 +9,4 @@ interface DELAY_MESSAGE {
 }
 
 export type DelayMessage = DELAY_MESSAGE;
+export type Payload = PAYLOAD;
