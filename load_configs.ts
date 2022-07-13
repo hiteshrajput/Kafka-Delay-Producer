@@ -24,6 +24,8 @@ export default function loadConfigs(): ENV {
       REDIS_SUBSCRIBER_PORT: parseInt(config.REDIS_SUBSCRIBER_PORT),
       MONGODB_URL: config.MONGODB_URL,
       MONGODB_DATABASE: config.MONGODB_DATABASE,
+      REDIS_PUBLISH_CHANNEL: config.REDIS_PUBLISH_CHANNEL,
+      REDIS_PUBLISH_MESSAGE_ROUTE: config.REDIS_PUBLISH_MESSAGE_ROUTE,
     };
   } else throw new Error(ResponseMessage.ERROR_LOADING_ENV_FILE);
 }

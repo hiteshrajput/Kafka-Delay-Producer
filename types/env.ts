@@ -7,6 +7,8 @@ interface ENV {
   REDIS_SUBSCRIBER_PORT: number;
   MONGODB_URL: string;
   MONGODB_DATABASE: string;
+  REDIS_PUBLISH_CHANNEL: string;
+  REDIS_PUBLISH_MESSAGE_ROUTE: string;
 }
 
 export default ENV;
